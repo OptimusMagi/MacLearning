@@ -1,0 +1,49 @@
+# Libraries, directiories and data
+# change directiory
+%cd
+#Libraries
+import pandas as pd
+import seaborn as sns
+
+#what does a dot(.) when placed in the equation mean?
+# to change the command '%cd', press control v
+
+#load the dataset
+of = pd.read_csv("Baseball.csv")
+df.head(  )
+#Mean of Runs Scored (RS)
+df.RS.mean()
+
+#Mean of Runs Scored (RS) by the Arizona team (ARI)
+df.loc[df.Team == "ARI"]. RS. mean ()
+
+
+#Mean of Runs Scored (RS) by the Arizona (ARI) since 2005
+df.loc[df.Team == "ARI"] & (df. YEar > 2005)]. RS.mean()
+
+
+ #Question: What is the mean of Runs Allowed (RA) by the Chicago team (CHC)
+ # until 2007
+ df.loc[df.Team == "CHC") & (df. Year < 2007)]. RA.mean()
+
+
+
+#Median and Mean of Wins (W)
+df.W.mean()
+print(df,W.mean())
+
+
+
+
+#Question: what is the median of Wins of the Baltimore Team (BAL) 2000
+df.loc (df.Team == "BAL") & 9df. Year <= 2000). W.median()
+
+
+# Mode, Median and Mean of OBP
+print(df.OBP.mean())
+print(df.OBP.median())
+
+# Question: Mode of OBP during the Year 2010.
+df.loc[df.Year == 2010]. OBP. mode()
+
+
